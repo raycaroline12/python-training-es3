@@ -21,12 +21,12 @@
         <li><a href="#execution">Execution</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#primeiro-programa">Primeiro programa</a></li>
+    <li><a href="#condicionais">Condicionais</a></li>
+    <li><a href="#loops">Loops</a></li>
+    <li><a href="#funcoes">Funções</a></li>
+    <li><a href="#classes">Classes</a></li>
+    <li><a href="#bibliotecas">Bibliotecas</a></li>
   </ol>
 </details>
 
@@ -63,9 +63,14 @@ $ sudo apt update -y
 $ sudo apt install python3.9
 ```
 
+## Execution
+
+### Modo Interativo
+### Modo script
+
 ---
 
-## Development setup
+# Primeiro programa
 
 Describe how to install all development dependencies and consider do this for multiple platforms.  
 
@@ -74,18 +79,19 @@ make install
 npm test
 ```
 
-## Running the tests
+## Entrada do usuário
 
-Remember this is a showcase, thus your potential employer might want to see an automated test-suite of some kind up running.
+## Comando print
+
 
 ---
 
-## Built With
+# Condicionais
 
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) - To deploy on Heroku
 
-## Release History
+<!--## Release History
 
 * 0.2.1
     * CHANGE: Update docs (module code remains unchanged)
@@ -97,17 +103,29 @@ Remember this is a showcase, thus your potential employer might want to see an a
 * 0.1.0
     * The first proper release
 * 0.0.1
-    * Initial work
+    * Initial work -->
 
 ---
 
-## Contributing
+# Loops
 
 1. Fork it (<https://github.com/yourname/yourproject/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
+
+---
+
+# Funções
+
+---
+
+# Classes
+
+---
+
+# Bibliotecas
 
 <!-- Markdown link & img dfn's -->
 
