@@ -1,4 +1,4 @@
-![Header](./HEADER.png)
+![Header](../img/HEADER.png)
 
 # Step by Step through Python
 
