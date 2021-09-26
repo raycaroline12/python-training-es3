@@ -9,7 +9,7 @@
 > O conteúdo deste passo a passo é resumido. Dúvidas surgirão ao longo do desenvolvimento. Para saná-las, leia a documentação! Ela é completa!
 > * Link: https://docs.python.org/3/
 ---
-## Let's go!
+# Let's go!
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -66,7 +66,31 @@ $ sudo apt install python3.9
 ## Execution
 
 ### Modo Interativo
-### Modo script
+
+Para executar um programa em Python, pode-se acessar o Shell do Python, chamado de Python Interativo ou de Python Shell, usando o comando **python** no terminal. Os comandos são executados imediatamente quando se pressiona a tecla enter. Neste caso, não é possível estruturar códigos e procedimentos mais complexos. Ele é melhor utilizado para testes de procedimentos simples e instruções rápidas. Para sair e voltar ao terminal, deve-se usar o comando **exit()**.
+
+```
+$ python
+Python 3.9.2 (default, Oct  8 2020, 12:12:24) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Olá")
+Olá
+>>> exit()
+$ 
+```
+### Modo Script
+
+Como citado, o modo Interativo não é capaz de armazenar sequências de comandos ou rotinas para serem executados posteriormente. Para isso, é preciso usar códigos, conhecidos como roteiros ou scripts, no caso do Python, chamado de Python Script.
+Esses arquivos contém instruções para serem executadas. É importante afirmar novamente que os scripts são executados de formas sequenciais. Eles podem ser criados até mesmo pelo bloco de notas ou qualquer editor de texto e editados livremente. Para isso, basta salvá-los com a extensão .py.
+
+Para executá-los, basta abrir o terminal, navegar até onde estão salvos os arquivos desejados e usar o comando python arquivo.py:
+
+```
+# Certifique-se de que o arquivo
+# esteja no diretorio corrente
+$ python meu_programa.py
+```
 
 ---
 
