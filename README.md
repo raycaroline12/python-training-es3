@@ -96,12 +96,7 @@ $ python meu_programa.py
 
 # Primeiro programa
 
-Describe how to install all development dependencies and consider do this for multiple platforms.  
-
-```sh
-make install
-npm test
-```
+![Img2](./img/python.png)
 
 ## Entrada do usuário
 
@@ -153,8 +148,6 @@ npm test
 
 <!-- Markdown link & img dfn's -->
 
-[header-url]: HEADER.png
-[header-link]: https://github.com/alexandrerosseto
 
 [repository-url]: https://github.com/alexandrerosseto/wbshopping
 
