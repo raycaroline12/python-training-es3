@@ -69,7 +69,7 @@ $ sudo apt install python3.9
 
 Para executar um programa em Python, pode-se acessar o Shell do Python, chamado de Python Interativo ou de Python Shell, usando o comando **python** no terminal. Os comandos são executados imediatamente quando se pressiona a tecla enter. Neste caso, não é possível estruturar códigos e procedimentos mais complexos. Ele é melhor utilizado para testes de procedimentos simples e instruções rápidas. Para sair e voltar ao terminal, deve-se usar o comando **exit()**.
 
-```
+```python
 $ python
 Python 3.9.2 (default, Oct  8 2020, 12:12:24)
 [GCC 8.4.0] on linux
@@ -86,7 +86,7 @@ Esses arquivos contém instruções para serem executadas. É importante afirmar
 
 Para executá-los, basta abrir o terminal, navegar até onde estão salvos os arquivos desejados e usar o comando python arquivo.py:
 
-```
+```python
 # Certifique-se de que o arquivo
 # esteja no diretorio corrente
 $ python meu_programa.py
@@ -98,10 +98,69 @@ $ python meu_programa.py
 
 ![Img2](./img/python.png)
 
+É importante conhecer algumas regrinhas antes de iniciar a programar em Python. Esta linguagem foi desenvolvida com o objetivo de ser algo intuitivo, bonito e fácil para os programadores. Esqueça algumas regras de sintaxe que você conhecia antes.
+
+> * Não é necessário o uso do ponto e vírgula (;) ao fim de uma linha de instrução
+> * Não utiliza-se as chaves ({}) para iniciar e encerrar um loop, condicional, função, classe, etc.
+> * Utiliza-se o símbolo '#' para iniciar um comentário
+
 ## Entrada do usuário
 
-## Comando print
+Para se criar rotinas e procedimentos mais sofisticados, por vezes, é necessário programar para coletar dados do usuário e imprimir os resultados. Isto é chamado de entrada e saída de dados. A função canônica de entrada de dados, isto é, para pedir informações do usuário é a função input. Nela, o argumento é uma mensagem impressa e o retorno é o que o usuário digitar.
 
+```python
+>>> frase = input(’digite uma frase\n’)
+digite uma frase
+Ola
+>>> frase
+’Ola’
+```
+
+Nesta função, mesmo que o usuário digite valores numéricos, os dados serão armazenados como strings. Para usá-los como outros tipos de dados, deve convertê-los.
+
+```python
+>>> x = int( input(’digite um valor\n’) )
+digite um valor
+2
+>>> x
+2
+```
+
+## Saída do usuário
+
+Para a saída de dados há a função print. Pode imprimir mais de uma string e também valores, separados por vírgulas.
+
+```python
+>>> print(1, ’mais’, 1, ’igual a’, 2)
+1 mais 1 igual a 2
+>>>
+```
+Para se imprimir variáveis, há varias formas de fazê-lo.
+O exemplo irá supor duas variáveis, sendo elas nome e nota:
+
+```python
+>>> nome = ’Joao’
+>>> nota = 10
+```
+Uma das formas é passar a variável como tupla. Neste modo, os locais na string que serão substituídos por variáveis são indicados com % seguidos de uma letra.
+
+```python
+>>> print(’A nota de %s foi %s’ % (nome , nota))
+A nota de Joao foi 10
+```
+
+Outra maneira é passar como um dicionário. Este modo é parecido com o anterior, a diferença é que são postas etiquetas dentro de parênteses para indicar a variável.
+
+```python
+>>> print(’A nota de %(n1)s foi %(n2)s’ % {’n1’: nome , ’n2’: nota })
+A nota de Joao foi 10
+```
+Uma outra forma muito comum, é utilizar o  **.format**. Neste modo, onde seriam as variáveis deve-se substituir por chaves "{}" e explicitar as variáveis em seguida.
+
+```python
+>>> print(’A nota de {} foi {}’.format(nome , nota))
+A nota de Joao foi 10
+```
 
 ---
 
