@@ -26,7 +26,6 @@
     <li><a href="#loops">Loops</a></li>
     <li><a href="#funcoes">Funções</a></li>
     <li><a href="#classes">Classes</a></li>
-    <li><a href="#bibliotecas">Bibliotecas</a></li>
   </ol>
 </details>
 
