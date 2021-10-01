@@ -103,6 +103,7 @@ $ python meu_programa.py
 > * Não é necessário o uso do ponto e vírgula (;) ao fim de uma linha de instrução
 > * Não utiliza-se as chaves ({}) para iniciar e encerrar um loop, condicional, função, classe, etc.
 > * Utiliza-se o símbolo '#' para iniciar um comentário
+> * A identação é obrigatória. A falta de identação é identificada como erro de sintaxe no seu programa
 
 ## Entrada do usuário
 
@@ -166,22 +167,25 @@ A nota de Joao foi 10
 
 # Condicionais
 
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) - To deploy on Heroku
+Como você sabe, as mais populares das estruturas condicionais são if-else e switch. 
+> No Python, não há a estrutura switch.
 
-<!--## Release History
+A estrutura condicional if-else em Python se dá da seguinte forma:
 
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Refactoring - Remove `setAnyMethod()`
-    * ADD: Add `newSomething()`
-* 0.1.1
-    * FIX: Crash when calling `defaultXYZ()` (Thanks @ContributorName)
-* 0.1.0
-    * The first proper release
-* 0.0.1
-    * Initial work -->
+> * A estrutura if inicia-se com **if + texte lógico + ':'** (como mencionado, chaves não são utilizadas, em vez disso, utiliza-se os dois pontos ':')
+> * A palavra reservada para o elseif é o '**elif**'
+> * Finaliza a condição com o **else**
+
+Essa estrutura é apresentada no exemplo a seguir. 
+```python
+x = int(input('digite um valor: '))
+if x >10:
+  print('x maior que 10')
+elif x <=10 and x >=5:
+  print('x entre 5 e 10')
+else:
+  print('x menor que 5')
+```
 
 ---
 
