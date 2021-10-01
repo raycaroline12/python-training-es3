@@ -5,7 +5,7 @@
 > Concentramos nesse espaço um resumo de tudo o que você precisa saber sobre  a linguagem de programação Python antes de começar a trabalhar. Não pule esta estapa, ela é imprescindível para que o seu desenvolvimento e avanço no projeto seja mais rápido.
 
 
-[![Read the docs][docs-image]][docs-url]
+## Read the docs!
 > O conteúdo deste passo a passo é resumido. Dúvidas surgirão ao longo do desenvolvimento. Para saná-las, leia a documentação! Ela é completa!
 > * Link: https://docs.python.org/3/
 ---
