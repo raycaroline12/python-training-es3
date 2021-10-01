@@ -26,6 +26,7 @@
     <li><a href="#loops">Loops</a></li>
     <li><a href="#funcoes">Funções</a></li>
     <li><a href="#classes">Classes</a></li>
+    <li><a href="#classes">Bibliotecas e módulos</a></li>
   </ol>
 </details>
 
@@ -258,7 +259,7 @@ Nossa próxima estrutura de repetição, diferentemente do WHILE, executará as 
 
 Sua estrutura depende de uma variável que funcionará como contador das execuções, e do número de vezes que os comandos serão repitidos:
 
-```python 
+```python
 >>>for i in range(1,6):
 ...    print(i)
 1
@@ -272,7 +273,7 @@ A primeira linha de código pode ser traduzida como: "para i variando de 1 até 
 
 Também é possível alterar o passo com que a variável contadora é incrementada adicionando mais um parâmetro à função *range()*, por padrão o passo tem valor 1. Alterando o exemplo anterior, temos:
 
-```python 
+```python
 >>>for i in range(1,4,2):
 ...    print(i)
 1
@@ -281,7 +282,7 @@ Também é possível alterar o passo com que a variável contadora é incrementa
 ```
 Outra possibilidade é informar os valores que a variável contadora assumirá nas execuções:
 
-```python 
+```python
 >>>for i in [1,2,3,4,5]:
 ...    print(i)
 1
@@ -587,7 +588,7 @@ Este objeto é um caderno, que contém cor e número de páginas
 Todo método recebe como primeiro parâmetro o próprio objeto, e este parâmetro deve ser declarado explicitamente na definição do método, ele servirá para poder acessar os próprios métodos e atributos.
 > É importante ressaltar que self não é uma palavra reservada em Python, mas é amplamente usado por convenção e boas práticas de programação.
 
-### Métodos construtores, acessores e modificadores 
+### Métodos construtores, acessores e modificadores
 
 
 São chamados de métodos acessores os métodos que acessam um atributo do objeto, mas não a modifiquem. Enquanto que os métodos modificadores acessam e modificam. Esses métodos também são chamados de getters e setters, respectivamente. O método construtor é um método especial das classes. Ele é executado sempre que uma nova classe é iniciada e é denotado por __init__. Continuando com o exemplo:
@@ -621,3 +622,22 @@ Caderno iniciado
 ---
 
 
+# Bibliotecas e módulos
+
+## Bibliotecas e módulos do dia-a-dia.
+
+* [Math](https://docs.python.org/3/library/math.html): Módulo para operações matemáticas.
+* [Numpy](https://numpy.org/doc/stable/): Biblioteca para manipulação de arrays.
+* [Time](https://docs.python.org/3/library/time.html): Módulo para operações utilizando o tempo como unidade.
+
+## Bibliotecas para ciência de dados.
+
+* [Matplotlib](https://matplotlib.org/stable/contents.html)
+* [Pandas](https://pandas.pydata.org/docs/)
+* [Arrow](https://arrow.readthedocs.io/en/latest/)
+
+## Bibliotecas para machine learning.
+
+* [TensorFlow](https://www.tensorflow.org/tutorials?hl=pt_br)
+* [Keras](https://keras.io/api/)
+* [Scikit-learn](https://scikit-learn.org/stable/user_guide.html)
