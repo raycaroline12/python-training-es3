@@ -103,6 +103,7 @@ $ python meu_programa.py
 > * Não é necessário o uso do ponto e vírgula (;) ao fim de uma linha de instrução
 > * Não utiliza-se as chaves ({}) para iniciar e encerrar um loop, condicional, função, classe, etc.
 > * Utiliza-se o símbolo '#' para iniciar um comentário
+> * A identação é obrigatória. A falta de identação é identificada como erro de sintaxe no seu programa
 
 ## Entrada do usuário
 
@@ -462,26 +463,93 @@ Após aprender estes tópicos sobre funções, você será capaz de modularizar 
 Segue uma dica sobre o uso de funções/módulos:
 
 > * É mais fácil testar os módulos individualmente do que o programa completo.
+
 # Classes
+
+Como você já deve saber, classe é definida como um agrupamento de valores e de operações.
+Frequentemente classes diferentes possuem características comuns. As classes diferentes podem compartilhar valores comuns e podem executar as mesmas operações. Em Python tais relacionamentos são expressados usando derivação e herança.
+
+Por exemplo, se existir uma classe definida por um usuário MinhaClasseCaderno, então um objeto Caderno1 pode ser criado da seguinte forma:
+
+```python
+>>> Caderno1 = MinhaClasseCaderno()
+```
+## Objetos, atributos e métodos
+
+Uma classe possui instância de atributos, instância de métodos e classes aninhadas. Ou seja, um objeto irá possuir dentro dele alguns valores (atributos), algumas funções (métodos) e algumas classes (aninhadas).
+
+A definição de uma classe é por meio da palavra reservada *class*, uma classe vazia pode ser definida como:
+
+```python
+>>> class Vazia():
+  pass
+>>> X = Vazia()
+```
+Os atributos são os valores que existem dentro do objeto. Por exemplo: uma classe Caderno será criada, definindo dois atributos, cor e np (número de páginas):
+
+```python
+>>> class Caderno():
+  cor = 'preto'
+  np = 10
+>>> NovoCaderno = Caderno ()
+>>> NovoCaderno.cor
+'preto'
+```
+
+```python
+>>> NovoCaderno.cor = "roxo"
+>>> NovoCaderno.cor
+'roxo'
+```
+Os métodos são funções intrínsecas aos objetos, que podem ser chamados de forma similar aos atributos e definidos como se fossem funções. Continuando com o exemplo da classe Caderno:
+
+```python
+>>> class Caderno():
+  cor = 'preto'
+  np = 10
+  def Descreva_se(self):
+    print('Este objeto é um caderno, que contém cor e número de páginas')
+
+>>> NovoCaderno = Caderno()
+>>> NovoCaderno.Descreva_se()
+Este objeto é um caderno, que contém cor e número de páginas
+```
+Todo método recebe como primeiro parâmetro o próprio objeto, e este parâmetro deve ser declarado explicitamente na definição do método, ele servirá para poder acessar os próprios métodos e atributos.
+> É importante ressaltar que self não é uma palavra reservada em Python, mas é amplamente usado por convenção e boas práticas de programação.
+
+### Métodos construtores, acessores e modificadores 
+
+
+São chamados de métodos acessores os métodos que acessam um atributo do objeto, mas não a modifiquem. Enquanto que os métodos modificadores acessam e modificam. Esses métodos também são chamados de getters e setters, respectivamente. O método construtor é um método especial das classes. Ele é executado sempre que uma nova classe é iniciada e é denotado por __init__. Continuando com o exemplo:
+
+```python
+>>> class Caderno():
+  cor = 'preto'
+  np = 10
+
+  def __init__(self):
+    print('Caderno iniciado')
+
+  def getCor(self):
+    return self.cor
+
+  def getNp(self):
+    return self.np
+
+  def setCor(self, novaCor):
+    self.cor = novaCor
+
+  def setNp(self, novoNp):
+    self.np = novoNp
+
+>>> C = Caderno()
+Caderno iniciado
+```
+
+> O conteúdo de Python para Programação Orientada a Objetos é imenso. Recomendamos que você se aprofunde neste assunto buscando outras fontes. Uma sugestão é a playlist gratuita de [POO em Python com o Otávio Miranda](https://www.youtube.com/watch?v=RLVbB91A5-8&list=PLbIBj8vQhvm34qAAEEH_PdL2tMG9rz-P7).
 
 ---
 
+
 # Bibliotecas
 
-<!-- Markdown link & img dfn's -->
-
-
-[repository-url]: https://github.com/alexandrerosseto/wbshopping
-
-[cloud-provider-url]: https://wbshopping.herokuapp.com
-
-[linkedin-url]: https://www.linkedin.com/in/alexandrerosseto
-
-[wiki]: https://github.com/yourname/yourproject/wiki
-
-[docs-image]: https://img.shields.io/badge/IMPORTANT-READ%20THE%20DOCS!-blue
-[docs-url]: https://docs.python.org/3/
-[Frontend-image]: https://img.shields.io/badge/Frontend-Ionic-blue?style=for-the-badge
-[Frontend-url]: https://img.shields.io/badge/Frontend-Ionic-blue?style=for-the-badge
-[Backend-image]: https://img.shields.io/badge/Backend-Java%208-important?style=for-the-badge
-[Backend-url]: https://img.shields.io/badge/Backend-Java%208-important?style=for-the-badge
