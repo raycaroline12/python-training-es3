@@ -215,15 +215,86 @@ elif x > 2:
 else:
     print('O número não é maior que 5 e nem maior que 2')
 ```
+### Exercício
+
+Para testar seus conhecimentos, construa um programa em Python utilizando IF e ELSE onde o usuário informa duas notas de um aluno e o programa diz se ele foi aprovado (média maior ou igual a 7), se fará final (média maior ou igual a 4 e menor que 7) ou se foi reprovado (média menor que 4). Depois reescreva o código utilizando o ELIF.
+
 ---
 
 # Loops
 
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
+As estruturas condicionais vistas acima, executam o bloco apenas uma vez. Para que o bloco seja executado mais de uma vez, devemos recorrer às estruturas de repetição como o **WHILE** e o **FOR**
+
+## While
+
+O WHILE, assim como o IF, recebe uma condição que será avaliada e enquanto a expressão for verdadeira o conjunto de ações será executado. Portanto, é necessário alguma estrutura que modifique a expressão inicial, caso contrário, o bloco de comandos será executado indefinidamente.
+
+```python
+x = 3
+while x > 0:
+    print(x)
+    x = x - 1
+```
+
+Perceba que sem a linha *"x = x - 1"*, *x* seria sempre maior que 0 e assim o programa entraria num loop infinito:
+
+```python
+>>>x = 3
+>>>while x > 0:
+...    print(x)
+3
+3
+3
+3
+...
+```
+
+### Exercício
+
+Construa um programa em Python onde o usuário digita uma sequencia indefinida de números positivos e ao final o programa informa a média dos valores digitados.
+
+## For
+
+Nossa próxima estrutura de repetição, diferentemente do WHILE, executará as ações por uma quantidade determinada de vezes, assim, utilizamos o FOR para as situações onde é necessário ter mais controle sobre o número de vezes que uma parte do código será executada.
+
+Sua estrutura depende de uma variável que funcionará como contador das execuções, e do número de vezes que os comandos serão repitidos:
+
+```python 
+>>>for i in range(1,6):
+...    print(i)
+1
+2
+3
+4
+5
+```
+
+A primeira linha de código pode ser traduzida como: "para i variando de 1 até 6, faça". Desta maneira, é possível percerber que i funciona como contador, e além disso o intervalo da função *range()* é fechado no início e aberto ao final, por isso a variável *i* ficou com valor 5 na última execução.
+
+Também é possível alterar o passo com que a variável contadora é incrementada adicionando mais um parâmetro à função *range()*, por padrão o passo tem valor 1. Alterando o exemplo anterior, temos:
+
+```python 
+>>>for i in range(1,4,2):
+...    print(i)
+1
+3
+5
+```
+Outra possibilidade é informar os valores que a variável contadora assumirá nas execuções:
+
+```python 
+>>>for i in [1,2,3,4,5]:
+...    print(i)
+1
+2
+3
+4
+5
+```
+
+### Exercício
+
+Construa um programa em Python que informa os múltiplos de um número(definido pelo usuário) de 0 a um número máximo(também definido pelo usuário).
 
 ---
 
