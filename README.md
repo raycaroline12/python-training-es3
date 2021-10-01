@@ -166,23 +166,54 @@ A nota de Joao foi 10
 
 # Condicionais
 
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) - To deploy on Heroku
+As estruturas condicionais auxiliam o programador nas tomadas de decisão dentro do código. Para *Python*, as estruturas são: **IF**, o **ELSE** e o **ELIF**.
 
-<!--## Release History
+O **IF**, que traduzindo significa SE, avalia uma condição e, caso a condição seja verdadeira, executa um bloco de ações com identação de 4 espaços. Caso a condição seja falsa, o bloco dentro do IF não é executado. Sua sintaxe é a seguinte:
 
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Refactoring - Remove `setAnyMethod()`
-    * ADD: Add `newSomething()`
-* 0.1.1
-    * FIX: Crash when calling `defaultXYZ()` (Thanks @ContributorName)
-* 0.1.0
-    * The first proper release
-* 0.0.1
-    * Initial work -->
+```python
+x = 10
 
+if x > 5:
+    print('O número é maior que 5')
+```
+Como 10 é maior que 5, a expressão é verdadeira e, desta forma, a mensagem do print será exibida na tela. Mas poderíamos executar outro bloco de ações, caso a expressão seja falsa, para isso temos o **ELSE**.
+
+O ELSE é escrito logo abaixo dos comandos do IF, mas sem a identação:
+
+```python
+x = 4
+
+if x > 5:
+    print('O número é maior que 5')
+else:
+    print('O número não é maior que 5')
+```
+Ao avaliar e constatar que a condição é falsa, somente o print do ELSE será mostrado na tela. Também é possível colocar outro IF dentro do ELSE, de modo que, caso a expressão seja falsa, teremos outra condição que deverá ser avaliada e outra sequencia de ações para ser executada.
+
+```python
+x = 4
+
+if x > 5:
+    print('O número é maior que 5')
+else:
+    if x > 2:
+        print('O número não é maior que 5, mas é maior que 2')
+    else:
+        print('O número não é maior que 5 e nem maior que 2')
+```
+
+Para facilitar a legibilidade, a linguagem Python oferece o comando **ELIF** que substituirá o ELSE IF. Reescrevendo o exemplo anterior, temos:
+
+```python
+x = 4
+
+if x > 5:
+    print('O número é maior que 5')
+elif x > 2:
+    print('O número não é maior que 5, mas é maior que 2')
+else:
+    print('O número não é maior que 5 e nem maior que 2')
+```
 ---
 
 # Loops
