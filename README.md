@@ -109,17 +109,17 @@ $ python meu_programa.py
 Para se criar rotinas e procedimentos mais sofisticados, por vezes, é necessário programar para coletar dados do usuário e imprimir os resultados. Isto é chamado de entrada e saída de dados. A função canônica de entrada de dados, isto é, para pedir informações do usuário é a função input. Nela, o argumento é uma mensagem impressa e o retorno é o que o usuário digitar.
 
 ```python
->>> frase = input(’digite uma frase\n’)
+>>> frase = input('digite uma frase\n')
 digite uma frase
 Ola
 >>> frase
-’Ola’
+'Ola'
 ```
 
 Nesta função, mesmo que o usuário digite valores numéricos, os dados serão armazenados como strings. Para usá-los como outros tipos de dados, deve convertê-los.
 
 ```python
->>> x = int( input(’digite um valor\n’) )
+>>> x = int( input('digite um valor\n') )
 digite um valor
 2
 >>> x
@@ -131,7 +131,7 @@ digite um valor
 Para a saída de dados há a função print. Pode imprimir mais de uma string e também valores, separados por vírgulas.
 
 ```python
->>> print(1, ’mais’, 1, ’igual a’, 2)
+>>> print(1, 'mais', 1, 'igual a', 2)
 1 mais 1 igual a 2
 >>>
 ```
@@ -139,26 +139,26 @@ Para se imprimir variáveis, há varias formas de fazê-lo.
 O exemplo irá supor duas variáveis, sendo elas nome e nota:
 
 ```python
->>> nome = ’Joao’
+>>> nome = 'Joao'
 >>> nota = 10
 ```
 Uma das formas é passar a variável como tupla. Neste modo, os locais na string que serão substituídos por variáveis são indicados com % seguidos de uma letra.
 
 ```python
->>> print(’A nota de %s foi %s’ % (nome , nota))
+>>> print('A nota de %s foi %s' % (nome , nota))
 A nota de Joao foi 10
 ```
 
 Outra maneira é passar como um dicionário. Este modo é parecido com o anterior, a diferença é que são postas etiquetas dentro de parênteses para indicar a variável.
 
 ```python
->>> print(’A nota de %(n1)s foi %(n2)s’ % {’n1’: nome , ’n2’: nota })
+>>> print('A nota de %(n1)s foi %(n2)s' % {’n1’: nome , ’n2’: nota })
 A nota de Joao foi 10
 ```
 Uma outra forma muito comum, é utilizar o  **.format**. Neste modo, onde seriam as variáveis deve-se substituir por chaves "{}" e explicitar as variáveis em seguida.
 
 ```python
->>> print(’A nota de {} foi {}’.format(nome , nota))
+>>> print('A nota de {} foi {}'.format(nome , nota))
 A nota de Joao foi 10
 ```
 
